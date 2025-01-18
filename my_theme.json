@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "font": "CaskaydiaCove NF",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "template": "({{ .Env.CONDA_DEFAULT_ENV }})",
+          "type": "text",
+          "style": "diamond",
+          "background": "#1c3d40",
+          "foreground": "#ffffff"
+        },
+        {
+          "template": "PS",
+          "type": "text",
+          "style": "diamond",
+          "background": "#1c3d40",
+          "foreground": "#ffffff"
+        },
+        {
+          "properties": {
+            "style": "full"
+          },
+          "template": "{{ .Path }}>",
+          "type": "path",
+          "style": "diamond",
+          "background": "#2f5753",
+          "foreground": "#ffffff"
+        }
+      ]
+    }
+  ],
+  "version": 3,
+  "final_space": true
+}
